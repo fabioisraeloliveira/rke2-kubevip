@@ -34,15 +34,15 @@ No need for cloud providers, HAProxy, Keepalived, or complex tooling. Just pure 
    cd rke2-kubevip
 
 2. Edit the variables at the top of rke2masters.sh: <br>
-VIP="<your-vip>"
-MASTER1_IP="<master1-ip>"
-MASTER2_IP="<master2-ip>"
-MASTER3_IP="<master3-ip>"
-INTERFACE="ens192"
+VIP="<your-vip>" <br>
+MASTER1_IP="<master1-ip>" <br>
+MASTER2_IP="<master2-ip>" <br>
+MASTER3_IP="<master3-ip>" <br>
+INTERFACE="ens192" <br>
 RKE2_TOKEN="your-token"
 
-3. Run the script on each master node:
-chmod +x rke2masters.sh
+3. Run the script on each master node: <br>
+chmod +x rke2masters.sh <br>
 ./rke2masters.sh
 
 The script will detect whether the node is the first master and apply the correct configuration automatically.

@@ -33,7 +33,7 @@ No need for cloud providers, HAProxy, Keepalived, or complex tooling. Just pure 
    git clone https://github.com/fabioisraeloliveira/rke2-kubevip.git
    cd rke2-kubevip
 
-2. Edit the variables at the top of rke2masters.sh:
+2. Edit the variables at the top of rke2masters.sh: <br>
 VIP="<your-vip>"
 MASTER1_IP="<master1-ip>"
 MASTER2_IP="<master2-ip>"

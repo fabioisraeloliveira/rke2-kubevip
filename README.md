@@ -45,6 +45,8 @@ RKE2_TOKEN="your-token"
 chmod +x rke2masters.sh <br>
 ./rke2masters.sh
 
+The script will detect whether the node is the first master and apply the correct configuration automatically.
+
 Optional: Rancher UI Installation
 
 Step 1: Deploy Kube-VIP via Helm
@@ -146,8 +148,6 @@ kubectl rollout status deploy/rancher -n cattle-system
 journalctl -u rancher-system-agent -f
 </pre>
 
-
-The script will detect whether the node is the first master and apply the correct configuration automatically.
 
 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to modify.

@@ -55,7 +55,7 @@ helm repo update
 Create a kubevip-values.yaml file:
 <pre>
 config:
-  address: "<reserved-ip>"
+  address: "reserved-ip"
 
 loadBalancer:
   enabled: true
@@ -63,7 +63,7 @@ loadBalancer:
 addressPool:
   name: default
   addresses:
-    - <reserved-ip>/32
+    - reserved-ip/32
 </pre>
 
 Install Kube-VIP:
@@ -85,7 +85,7 @@ controller:
   service:
     enabled: true
     type: LoadBalancer
-    loadBalancerIP: <reserved-ip>
+    loadBalancerIP: reserved-ip
   publishService:
     enabled: true
 </pre>
@@ -107,7 +107,7 @@ openssl req -x509 -nodes -days 365 \
   -keyout tls.key \
   -out tls.crt \
   -subj "/C=BR/ST=<state>/L=<city>/O=<org>/CN=<dns>" \
-  -addext "subjectAltName = DNS:<dns>"
+  -addext "subjectAltName = DNS:dns"
 </pre>
 
 Create secrets for Rancher:
